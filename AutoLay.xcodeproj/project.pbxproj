@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1AD1E21C34F24600E291BA /* sampledb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 8A1AD1E11C34F24600E291BA /* sampledb.sql */; };
 		8A2060C21C2BF85D008300F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2060C11C2BF85D008300F3 /* main.m */; };
 		8A2060C51C2BF85D008300F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2060C41C2BF85D008300F3 /* AppDelegate.m */; };
 		8A2060C81C2BF85D008300F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2060C71C2BF85D008300F3 /* ViewController.m */; };
@@ -14,6 +15,10 @@
 		8A2060CD1C2BF85D008300F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2060CC1C2BF85D008300F3 /* Images.xcassets */; };
 		8A2060D01C2BF85D008300F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A2060CE1C2BF85D008300F3 /* LaunchScreen.xib */; };
 		8A2060DC1C2BF85D008300F3 /* AutoLayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2060DB1C2BF85D008300F3 /* AutoLayTests.m */; };
+		8A8C96451C3406AA00211B4F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C96441C3406AA00211B4F /* libsqlite3.dylib */; };
+		8A8C96481C34076B00211B4F /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C96471C34076B00211B4F /* DBManager.m */; };
+		8A91331E1C3165B90006C55D /* DataFetchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91331B1C3165B90006C55D /* DataFetchService.m */; };
+		8A91331F1C3165B90006C55D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A91331D1C3165B90006C55D /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A1AD1E11C34F24600E291BA /* sampledb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = sampledb.sql; sourceTree = "<group>"; };
 		8A2060BC1C2BF85D008300F3 /* AutoLay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2060C01C2BF85D008300F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A2060C11C2BF85D008300F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,13 @@
 		8A2060D51C2BF85D008300F3 /* AutoLayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2060DA1C2BF85D008300F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A2060DB1C2BF85D008300F3 /* AutoLayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayTests.m; sourceTree = "<group>"; };
+		8A8C96441C3406AA00211B4F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8A8C96461C34076B00211B4F /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		8A8C96471C34076B00211B4F /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		8A91331A1C3165B90006C55D /* DataFetchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFetchService.h; sourceTree = "<group>"; };
+		8A91331B1C3165B90006C55D /* DataFetchService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFetchService.m; sourceTree = "<group>"; };
+		8A91331C1C3165B90006C55D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8A91331D1C3165B90006C55D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8C96451C3406AA00211B4F /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 		8A2060B31C2BF85D008300F3 = {
 			isa = PBXGroup;
 			children = (
+				8A8C96441C3406AA00211B4F /* libsqlite3.dylib */,
 				8A2060BE1C2BF85D008300F3 /* AutoLay */,
 				8A2060D81C2BF85D008300F3 /* AutoLayTests */,
 				8A2060BD1C2BF85D008300F3 /* Products */,
@@ -81,6 +96,7 @@
 		8A2060BE1C2BF85D008300F3 /* AutoLay */ = {
 			isa = PBXGroup;
 			children = (
+				8A9133201C3165C70006C55D /* Web */,
 				8A2060C31C2BF85D008300F3 /* AppDelegate.h */,
 				8A2060C41C2BF85D008300F3 /* AppDelegate.m */,
 				8A2060C61C2BF85D008300F3 /* ViewController.h */,
@@ -89,6 +105,8 @@
 				8A2060CC1C2BF85D008300F3 /* Images.xcassets */,
 				8A2060CE1C2BF85D008300F3 /* LaunchScreen.xib */,
 				8A2060BF1C2BF85D008300F3 /* Supporting Files */,
+				8A8C96461C34076B00211B4F /* DBManager.h */,
+				8A8C96471C34076B00211B4F /* DBManager.m */,
 			);
 			path = AutoLay;
 			sourceTree = "<group>";
@@ -96,6 +114,7 @@
 		8A2060BF1C2BF85D008300F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A1AD1E11C34F24600E291BA /* sampledb.sql */,
 				8A2060C01C2BF85D008300F3 /* Info.plist */,
 				8A2060C11C2BF85D008300F3 /* main.m */,
 			);
@@ -117,6 +136,17 @@
 				8A2060DA1C2BF85D008300F3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A9133201C3165C70006C55D /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				8A91331A1C3165B90006C55D /* DataFetchService.h */,
+				8A91331B1C3165B90006C55D /* DataFetchService.m */,
+				8A91331C1C3165B90006C55D /* Reachability.h */,
+				8A91331D1C3165B90006C55D /* Reachability.m */,
+			);
+			name = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +231,7 @@
 			files = (
 				8A2060CB1C2BF85D008300F3 /* Main.storyboard in Resources */,
 				8A2060D01C2BF85D008300F3 /* LaunchScreen.xib in Resources */,
+				8A1AD1E21C34F24600E291BA /* sampledb.sql in Resources */,
 				8A2060CD1C2BF85D008300F3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +252,10 @@
 			files = (
 				8A2060C81C2BF85D008300F3 /* ViewController.m in Sources */,
 				8A2060C51C2BF85D008300F3 /* AppDelegate.m in Sources */,
+				8A91331E1C3165B90006C55D /* DataFetchService.m in Sources */,
+				8A8C96481C34076B00211B4F /* DBManager.m in Sources */,
 				8A2060C21C2BF85D008300F3 /* main.m in Sources */,
+				8A91331F1C3165B90006C55D /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +452,7 @@
 				8A2060E11C2BF85D008300F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A2060E21C2BF85D008300F3 /* Build configuration list for PBXNativeTarget "AutoLayTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +461,7 @@
 				8A2060E41C2BF85D008300F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
